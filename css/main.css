@@ -49,6 +49,78 @@ body {
   margin-bottom: 2em
 }
 
+/* Accordion */
+.accordion-wrapper {
+  margin-left: -18px
+}
+.l-accordion {
+  display: flex;
+  background-color: #eee;
+  background-color: #fff;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-left: 1px solid transparent;
+  outline: none;
+  position: relative;
+  transition: 0.4s
+}
+.active, .l-accordion:hover, .l-accordion.active + .l-accord  {
+  border-left: 1px solid #ccc
+}
+
+.l-accord {
+  padding: 0 18px;
+  margin: 0 0 16px;
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;;
+  -moz-transition: max-height 0.5s ease-in-out;;
+  -ms-transition: max-height 0.5s ease-in-out;;
+  -o-transition: max-height 0.5s ease-in-out;;
+  transition: max-height 0.5s ease-in-out;;
+  max-height: 0
+}
+.l-accord p {
+  padding: 15px 0 25px
+}
+/*
+.l-accordion.active + .l-accord {
+  display: block;
+  max-height: none
+}*/
+.l-accordion:after {
+  content: '▼';
+  font-size: 13px;
+  color: #777;
+  position: absolute;
+  right: 0;
+  padding: 0 1em;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 1, 1)
+}
+
+.active:after {
+  transform: rotate(180deg)
+}
+
+/* Accordion Checkbox */
+.l-accordion + input {
+  display: none;
+  position: absolute;
+  opacity: 0
+}
+.l-accordion + input:checked + .l-accord {
+  display: block;
+  opacity: 1;
+  max-height: 500px
+}
+
+
 /* Mobile */
 .d-show {
   display: block
