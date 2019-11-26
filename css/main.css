@@ -26,15 +26,20 @@ body {
   border: 1px solid #C4C4C4;
   margin-bottom: 40px
 }
+.card-container > h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 55px 0 15px
+}
 .card > video {
   max-width: 100%;
   height: auto
 }
-.card > h2 {
+.card > h3 {
   font-size: 2em;
   font-weight: 300
 }
-.card > h2::after {
+.card > h3::after {
   display: block;
   content: '';
   width: 100%;
@@ -48,6 +53,20 @@ body {
 .card > p:last-of-type {
   margin-bottom: 2em
 }
+.card-advice {
+  border: 2px solid #2f96d99e;
+  border-radius: 3px;
+  padding: 9px 18px 12px
+}
+.card-advice::before {
+  content: 'Полезно знать';
+  font-size: 12px;
+  color: #2F96D9;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px
+}
+
 
 /* Accordion */
 .accordion-wrapper {
