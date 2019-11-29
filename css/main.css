@@ -10,6 +10,9 @@ body {
   margin: 0;
   background-color: #F8F9FA
 }
+:focus {
+  outline: none
+}
 .card-container {
   width: 100%;
   max-width: 900px;
@@ -26,10 +29,34 @@ body {
   border: 1px solid #C4C4C4;
   margin-bottom: 40px
 }
+.card-container > h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 50px
+}
 .card-container > h2 {
   font-size: 30px;
   font-weight: 300;
   margin: 55px 0 15px
+}
+.card-container .card-nav {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600
+}
+.card-nav a {
+  border: 1px solid #DEDEDE;
+  color: #686868;
+  flex: 1 0 49%;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 8px
+}
+.card-nav a:hover::after {
+  content: '\0023F5';
+  display: inline-block;
+  position: absolute
 }
 .card > video {
   max-width: 100%;
