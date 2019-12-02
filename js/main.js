@@ -74,3 +74,33 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+
+// Progress Bar 2
+/*
+player       = document.getElementById('video-element');
+progressBar  = document.getElementById('progress-bar');
+
+player.addEventListener('timeupdate', updateProgressBar, false);
+
+progressBar.addEventListener("click", seek);
+
+function seek(e) {
+    var percent = e.offsetX / this.offsetWidth;
+    player.currentTime = percent * player.duration;
+    e.target.value = Math.floor(percent / 100);
+    e.target.innerHTML = progressBar.value + '% played';
+}
+
+function updateProgressBar() {
+  var percentage = Math.floor((100 / player.duration) * player.currentTime);
+  progressBar.value = percentage;
+  progressBar.innerHTML = percentage + '% played';
+}
+
+function resetPlayer() {
+  progressBar.value = 0;
+  player.currentTime = 0;
+  changeButtonType(btnPlayPause, 'play');
+}*/

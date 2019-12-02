@@ -62,8 +62,13 @@ body {
   display: inline-block;
   position: absolute
 }
-.card > video {
+.card .obj-container {
   box-shadow: 7px 7px 60px -10px #0000004d;
+  display: flex;
+  width: 100%;
+  height: auto
+}
+.card video {
   max-width: 100%;
   height: auto
 }
@@ -196,3 +201,20 @@ header {
   z-index: 1;
   margin-bottom: 40px
 }
+
+progress {
+  color: #2f96d9;
+  font-size: 12px;
+  width: 100%;
+  height: 6px;
+  border: none;
+  background: #fff;
+  border-radius: 9px;
+  vertical-align: middle;
+}
+progress::-webkit-progress-value {
+  transition: width 1s ease;
+}/*
+progress {
+  transition: all 1s ease;
+}*/
