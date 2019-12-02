@@ -185,6 +185,23 @@ body {
   display: none
 }
 
+@media (max-width: 479px) {
+  .card-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .card-container .card {
+    background-color: transparent;
+    padding: 20px 0px;
+    border: none
+  }
+  .card .obj-container {
+    margin-left: -15px;
+    width: calc(100% + 30px)
+  }
+}
+
+
 
 /* TEMP: fixes */
 p {
