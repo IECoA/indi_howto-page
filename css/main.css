@@ -63,13 +63,16 @@ body {
   position: absolute
 }
 .card .obj-container {
+  border-radius: 2px;
   box-shadow: 7px 7px 60px -10px #0000004d;
   display: flex;
+  overflow: hidden;
   width: 100%;
   height: auto
 }
 .card video {
-  max-width: 100%;
+  max-width: calc(100% + 2px);
+  margin-left: -1px;
   height: auto
 }
 .card > h3 {
