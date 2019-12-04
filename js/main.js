@@ -76,7 +76,11 @@ $('a[href*="#"]')
     }
   });
 
-
+// Video Views Counter
+var v = document.getElementsByTagName("video")[0];
+v.addEventListener("ended", function() {
+    console.log ('Viewed');
+}, true);
 
 // Progress Bar 2
 /*

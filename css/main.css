@@ -24,15 +24,11 @@ body {
 .card-container .card {
   background-color: #fff;
   font-weight: 300;
+  font-weight: 400;
   padding: 40px 65px;
   border-radius: 4px;
   border: 1px solid #C4C4C4;
-  margin-bottom: 40px
-}
-.card-container > h1 {
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 50px
+  margin: 40px 0
 }
 .intro-banner {
   display: flex;
@@ -47,13 +43,15 @@ body {
 }
 .intro-banner h1 {
   font-size: 2.1em;
+  font-weight: 700;
   max-width: 40vw;
+  text-shadow: 1px 1px 1px #00000030;
   width: 14em
 }
-.card-container > h2 {
+.card-container h2 {
   font-size: 30px;
-  font-weight: 300;
-  margin: 55px 0 15px
+  font-weight: 600;
+  margin: 0 0 40px
 }
 .card-container .card-nav {
   display: flex;
@@ -67,16 +65,22 @@ body {
   flex: 1 0 49%;
   text-align: center;
   text-decoration: none;
+  transition: all 0.25s ease-in-out;
   padding: 10px 8px
 }
 .card-nav a:hover {
   color: #2f96d9;
   border-color: #2f96d9
 }
-.card-nav a:hover::after {
+.card-nav a::after {
   content: '\0023F5';
   display: inline-block;
-  position: absolute
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out
+}
+.card-nav a:hover::after {
+  opacity: 1
 }
 .card .obj-container {
   border-radius: 2px;
@@ -86,6 +90,9 @@ body {
   margin-top: 1em;
   width: 100%;
   height: auto
+}
+.card .obj-container:not(:last-child) {
+  margin-bottom: 100px
 }
 .card video {
   max-width: calc(100% + 2px);
