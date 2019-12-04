@@ -195,6 +195,12 @@ body {
   transform: rotate(180deg)
 }
 
+/* Share */
+.ya-share2 {
+  position: absolute;
+  margin-top: 20px
+}
+
 /* Accordion Checkbox */
 .l-accordion + input {
   display: none;
