@@ -14,7 +14,8 @@ $(window).scroll(function() {
 $(window).scroll(function(e)
   {
     var offsetRange = $(window).height() / 3,
-        offsetTop = $(window).scrollTop() + offsetRange + $("header").outerHeight(true),
+        offsetTop = $(window).scrollTop() + offsetRange,
+        offsetTopHeader = $(window).scrollTop() + offsetRange + $("header").outerHeight(true),
         offsetBottom = offsetTop + offsetRange;
 
     $("video").each(function () {

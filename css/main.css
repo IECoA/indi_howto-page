@@ -34,6 +34,22 @@ body {
   font-weight: 300;
   margin-bottom: 50px
 }
+.intro-banner {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/bn-sq-min.png);
+  background-image: -webkit-image-set(url(../img/bn-sq-min.webp)1x);
+  background-position: 126% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 70%;
+  height: 400px
+}
+.intro-banner h1 {
+  font-size: 2.1em;
+  max-width: 40vw;
+  width: 14em
+}
 .card-container > h2 {
   font-size: 30px;
   font-weight: 300;
@@ -67,6 +83,7 @@ body {
   box-shadow: 7px 7px 60px -10px #0000004d;
   display: flex;
   overflow: hidden;
+  margin-top: 1em;
   width: 100%;
   height: auto
 }
@@ -119,7 +136,7 @@ body {
   color: #444;
   font-weight: 600;
   cursor: pointer;
-  padding: 10px 18px;
+  padding: 10px 42px 10px 18px;
   width: 100%;
   text-align: left;
   border: none;
@@ -145,7 +162,10 @@ body {
   transition: max-height 0.5s ease-in-out;;
   max-height: 0
 }
-.l-accord p {
+/*.l-accord p {
+  padding: 15px 0 25px
+}*/
+.l-accord div {
   padding: 15px 0 25px
 }
 /*
@@ -154,6 +174,7 @@ body {
   max-height: none
 }*/
 .l-accordion:after {
+  align-self: center;
   content: '▼';
   font-size: 13px;
   color: #777;
@@ -222,19 +243,6 @@ header {
   margin-bottom: 40px
 }
 
-progress {
-  color: #2f96d9;
-  font-size: 12px;
-  width: 100%;
-  height: 6px;
-  border: none;
-  background: #fff;
-  border-radius: 9px;
-  vertical-align: middle;
+img {
+  width: 100%
 }
-progress::-webkit-progress-value {
-  transition: width 1s ease;
-}/*
-progress {
-  transition: all 1s ease;
-}*/
