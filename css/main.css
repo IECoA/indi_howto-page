@@ -200,6 +200,13 @@ body {
   position: absolute;
   margin-top: 20px
 }
+.ya-share2__icon {
+  filter: invert(.75);
+}
+.ya-share2__badge {
+  background-color: transparent!important;
+  border: 1px solid #b1b1b1
+}
 
 /* Accordion Checkbox */
 .l-accordion + input {
@@ -258,4 +265,31 @@ header {
 
 img {
   width: 100%
+}
+
+/* TEMP: Breadcrumb */
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0
+}
+.list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+.breadcrumb-link {
+  color: #333;
+  text-decoration: none
+}
+.breadcrumb-link.breadcrumb-active {
+  pointer-events: none
+}
+.breadcrumb-list > li:not(:last-of-type)::after {
+  padding: 0 6px;
+  content: ">"
 }
