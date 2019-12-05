@@ -66,7 +66,8 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
-  padding: 10px 8px
+  padding: 10px 8px;
+  position: relative
 }
 .card-nav a:hover {
   color: #2f96d9;
@@ -101,7 +102,8 @@ body {
 }
 .card > h3 {
   font-size: 1.5em;
-  font-weight: 600
+  font-weight: 600;
+  margin-top: 2em
 }
 .card > h3::after {
   display: block;
@@ -111,7 +113,7 @@ body {
   background-color: #C4C4C4;
   margin: 6px 0 23px
 }
-.card > p {
+.card-container p {
   margin-bottom: 1em
 }
 .card > p:last-of-type {
@@ -272,10 +274,15 @@ body {
   .card-nav a {
     align-items: center;
     display: flex;
+    padding: 10px 35px;
     justify-content: center
   }
   .card-nav a::after, .card-nav a:hover::after {
-    display: none
+    opacity: 1;
+    right: 15px
+  }
+  .ya-share2__container_size_m .ya-share2__item {
+    margin-right: 10px!important
   }
 }
 
@@ -294,10 +301,16 @@ body {
     width: calc(100% + 30px)
   }
   .card-nav a {
-    flex: 0 0 100%
+    flex: 0 0 100%;
+    padding: 10px 30px;
+    margin-bottom: 5px
   }
   .l-accordion, .l-accord {
     background-color: transparent
+  }
+  .card-nav a::after, .card-nav a:hover::after {
+    font-size: 1.2em;
+    right: 10px
   }
 }
 
