@@ -198,7 +198,8 @@ body {
 /* Share */
 .ya-share2 {
   position: absolute;
-  margin-top: 20px
+  margin-top: 20px;
+  height: 26px
 }
 .ya-share2__icon {
   filter: invert(.75);
@@ -248,6 +249,36 @@ body {
   display: none
 }
 
+@media (max-width: 767px) {
+  .intro-banner {
+    background-position: 50% -100%;
+    background-size: 515px;
+    flex-direction: column-reverse;
+    height: 420px
+  }
+  .intro-banner h1 {
+    font-size: 1.8em;
+    margin: 0 auto;
+    max-width: 100%
+  }
+  .intro-banner > div {
+    padding-bottom: 40px;
+    text-align: center;
+    width: 100%
+  }
+  .ya-share2 {
+    position: relative
+  }
+  .card-nav a {
+    align-items: center;
+    display: flex;
+    justify-content: center
+  }
+  .card-nav a::after, .card-nav a:hover::after {
+    display: none
+  }
+}
+
 @media (max-width: 479px) {
   .card-container {
     padding-left: 15px;
@@ -261,6 +292,12 @@ body {
   .card .obj-container {
     margin-left: -15px;
     width: calc(100% + 30px)
+  }
+  .card-nav a {
+    flex: 0 0 100%
+  }
+  .l-accordion, .l-accord {
+    background-color: transparent
   }
 }
 
