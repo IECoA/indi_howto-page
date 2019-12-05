@@ -87,7 +87,7 @@ body {
   box-shadow: 7px 7px 60px -10px #0000004d;
   display: flex;
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: 2em;
   width: 100%;
   height: auto
 }
@@ -206,6 +206,25 @@ body {
 .ya-share2__badge {
   background-color: transparent!important;
   border: 1px solid #b1b1b1
+}
+.ya-share2__item:hover .ya-share2__icon, .ya-share2__item:hover .ya-share2__badge {
+  border-color: transparent;
+  filter: none
+}
+.ya-share2__item_service_telegram:hover .ya-share2__badge {
+  background-color: #64a9dc!important
+}
+.ya-share2__item_service_whatsapp:hover .ya-share2__badge {
+  background-color: #65bc54!important
+}
+.ya-share2__item_service_odnoklassniki:hover .ya-share2__badge {
+  background-color: #eb722e!important
+}
+.ya-share2__item_service_facebook:hover .ya-share2__badge {
+  background-color: #3b5998!important
+}
+.ya-share2__item_service_vkontakte:hover .ya-share2__badge {
+      background-color: #48729e!important
 }
 
 /* Accordion Checkbox */
