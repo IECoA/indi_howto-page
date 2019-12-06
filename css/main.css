@@ -80,8 +80,7 @@ body {
   text-decoration: none
 }
 .card-nav a::after {
-  content: '\0023F5';
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%23686868'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%232f96d9'/%3E%3C/svg%3E");
   opacity: 0;
   right:15px;
   width: 5.5px;
@@ -89,7 +88,6 @@ body {
   transition: opacity 0.2s ease-in-out
 }
 .card-nav a:hover::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%232f96d9'/%3E%3C/svg%3E");
   opacity: 1
 }
 .card .obj-container {
@@ -238,8 +236,14 @@ body {
 .m-show {
   display: none
 }
-
 @media (max-width: 767px) {
+  .card-container {
+    padding-right: 20px;
+    padding-left: 20px
+  }
+  .card-container .card {
+    padding: 40px 50px;
+  }
   .intro-banner {
     background-position: 50% -63%;
     background-size: 510px;
@@ -266,8 +270,12 @@ body {
     justify-content: center
   }
   .card-nav a::after, .card-nav a:hover::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%23686868'/%3E%3C/svg%3E");
     opacity: 1;
     right: 15px
+  }
+  .card-nav a:hover::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%232f96d9'/%3E%3C/svg%3E");
   }
   .ya-share2__container_size_m .ya-share2__item {
     margin-right: 10px!important
