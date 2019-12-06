@@ -58,6 +58,14 @@ body {
   flex-wrap: wrap;
   font-weight: 600
 }
+.card-container a {
+  color: #277cb3;
+  text-decoration: none
+}
+.card-container a:hover {
+  color: #2f96d9;
+  text-decoration: underline
+}
 .card-nav a {
   border: 1px solid #DEDEDE;
   background-color: #fff;
@@ -76,6 +84,7 @@ body {
 .card-nav a::after {
   content: '\0023F5';
   display: inline-block;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   opacity: 0;
   position: absolute;
   transition: opacity 0.2s ease-in-out
@@ -92,8 +101,8 @@ body {
   width: 100%;
   height: auto
 }
-.card .obj-container:not(:last-child) {
-  margin-bottom: 100px
+.card .obj-container + h3 {
+  margin-top: 100px
 }
 .card video {
   max-width: calc(100% + 2px);
