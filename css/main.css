@@ -180,17 +180,9 @@ body {
   transition: max-height 0.5s ease-in-out;;
   max-height: 0
 }
-/*.l-accord p {
-  padding: 15px 0 25px
-}*/
 .l-accord div {
   padding: 15px 0 25px
 }
-/*
-.l-accordion.active + .l-accord {
-  display: block;
-  max-height: none
-}*/
 .l-accordion:after {
   align-self: center;
   content: '▼';
@@ -238,19 +230,6 @@ body {
 .ya-share2__item_service_vkontakte:hover .ya-share2__badge {
       background-color: #48729e!important
 }
-
-/* Accordion Checkbox */
-.l-accordion + input {
-  display: none;
-  position: absolute;
-  opacity: 0
-}
-.l-accordion + input:checked + .l-accord {
-  display: block;
-  opacity: 1;
-  max-height: 500px
-}
-
 
 /* Mobile */
 .d-show {
@@ -321,6 +300,9 @@ body {
   .card-nav a {
     flex: 0 0 100%;
     padding: 10px 30px;
+    margin-bottom: 5px
+  }
+  .l-accordion {
     margin-bottom: 5px
   }
   .l-accordion, .l-accord {
