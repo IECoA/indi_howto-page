@@ -288,6 +288,7 @@ body {
     justify-content: center
   }
   .card-nav a::after, .card-nav a:hover::after {
+    font-family: Helvetica,Arial,sans-serif;
     opacity: 1;
     right: 15px
   }
