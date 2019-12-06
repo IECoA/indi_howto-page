@@ -360,7 +360,7 @@ img {
   display: -ms-flexbox;
   display: flex
 }
-.breadcrumb-link {
+.card-container .breadcrumb-link {
   color: #333;
   text-decoration: none
 }
