@@ -33,12 +33,9 @@ body {
 .intro-banner {
   display: flex;
   align-items: center;
-  background-image: url(../img/bn-sq-min.png);
-  background-image: -webkit-image-set(url(../img/bn-sq-min.webp)1x);
-  background-position: 126% 50%;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-size: 70%;
+  background: 112% 50% / 60% no-repeat;
+  background-image: url("../img/how-bn-640.jpg");
+  background-image: -webkit-image-set(url("../img/how-bn-640.webp")1x);
   height: 400px
 }
 .intro-banner h1 {
@@ -84,13 +81,15 @@ body {
 }
 .card-nav a::after {
   content: '\0023F5';
-  display: inline-block;
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%23686868'/%3E%3C/svg%3E");
   opacity: 0;
+  right:15px;
+  width: 5.5px;
   position: absolute;
   transition: opacity 0.2s ease-in-out
 }
 .card-nav a:hover::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 62 120'%3E%3Cpolygon points='0.5 1.18 61.28 60 0.5 118.82 0.5 1.18' fill='%232f96d9'/%3E%3C/svg%3E");
   opacity: 1
 }
 .card .obj-container {
@@ -263,8 +262,8 @@ body {
 
 @media (max-width: 767px) {
   .intro-banner {
-    background-position: 50% -100%;
-    background-size: 515px;
+    background-position: 50% -63%;
+    background-size: 510px;
     flex-direction: column-reverse;
     height: 420px
   }
@@ -288,7 +287,6 @@ body {
     justify-content: center
   }
   .card-nav a::after, .card-nav a:hover::after {
-    font-family: Helvetica,Arial,sans-serif;
     opacity: 1;
     right: 15px
   }
@@ -300,7 +298,16 @@ body {
 @media (max-width: 479px) {
   .card-container {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px
+  }
+  .intro-banner {
+    background-position: 50% -5%;
+    background-size: 410px;
+    margin: 0 -15px
+  }
+  .intro-banner > div {
+    padding-left: 15px;
+    padding-right: 15px
   }
   .card-container .card {
     background-color: transparent;
@@ -320,11 +327,14 @@ body {
     background-color: transparent
   }
   .card-nav a::after, .card-nav a:hover::after {
-    font-size: 1.2em;
     right: 10px
   }
 }
-
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .intro-banner{
+    background-image: url("../img/how-bn-1030.jpg");
+  }
+}
 
 
 /* TEMP: fixes */
