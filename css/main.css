@@ -79,7 +79,8 @@ body {
 }
 .card-nav a:hover {
   color: #2f96d9;
-  border-color: #2f96d9
+  border-color: #2f96d9;
+  text-decoration: none
 }
 .card-nav a::after {
   content: '\0023F5';
